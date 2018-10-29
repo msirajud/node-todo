@@ -11,7 +11,7 @@ pipeline {
 
       steps {
         checkout scm
-        sh 'docker build -t $IMAGE_NAME:$BUILD_ID .'
+        sh 'sudo docker build -t $IMAGE_NAME:$BUILD_ID .'
       }
     }
     stage('Test') {
