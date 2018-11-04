@@ -5,7 +5,7 @@ pipeline {
   agent none
 
   environment {
-    IMAGE_NAME = 'prydonius/node-todo'
+    IMAGE_NAME = 'msirajud/nodetodo'
   }
 
   stages {
