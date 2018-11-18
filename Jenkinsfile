@@ -50,7 +50,9 @@ pipeline {
 
       environment {
         RELEASE_NAME = 'todos-staging'
-        SERVER_HOST = 'todos.staging.k8s.prydoni.us'
+        //SERVER_HOST = 'todos.staging.k8s.prydoni.us'
+        SERVER_HOST = '10.128.0.2'
+        
       }
 
       steps {
@@ -81,7 +83,8 @@ pipeline {
 
       environment {
         RELEASE_NAME = 'todos-production'
-        SERVER_HOST = 'todos.k8s.prydoni.us'
+        //SERVER_HOST = 'todos.k8s.prydoni.us'
+        SERVER_HOST = '10.128.0.3'
       }
 
       steps {
